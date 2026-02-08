@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PAFIX INDUSTRIES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>PAFIX INDUSTRIES</h1>
+  <p>Manufacturer & Bulk Supplier</p>
+</header>
+
+<section class="categories">
+  <button onclick="showGallery('bolts')">Bolts</button>
+  <button onclick="showGallery('nuts')">Nuts</button>
+  <button onclick="showGallery('washers')">Washers</button>
+</section>
+
+<section id="gallery" class="gallery"></section>
+
+<section class="inquiry">
+  <h2>Send Your Bulk Requirement</h2>
+  <form onsubmit="sendInquiry(event)">
+    <input type="text" id="name" placeholder="Your Name / Company" required>
+    <input type="text" id="contact" placeholder="Phone / WhatsApp" required>
+    <textarea id="requirement" placeholder="Mention size, grade, quantity" required></textarea>
+    <button type="submit">Send Requirement</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
